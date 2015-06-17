@@ -1,0 +1,18 @@
+/* app css stylesheet */
+
+/*
+	Had to aligin everyhting
+	to the new serach bar
+*/
+input.adminSearchText {
+	float: left;
+}
+select.adminSearchText {
+	float: left;
+}
+div.adminSearchText {
+	float:left;
+}
+.submit-form input.ng-invalid.ng-touched {
+    background-color: #FA787E;
+}

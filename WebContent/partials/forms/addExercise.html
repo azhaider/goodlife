@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+            <div class="modal-body">
+      <form class="form-horizontal ng-pristine ng-valid" name="addExerciseFm">
+      
+							<div class="form-group">
+								<label class="col-md-2">Exercise Title</label>
+								<div class="col-md-4">
+									<input type="text" ng-model="chapTitle" name="chapTitle" class="form-control ng-pristine ng-valid" required>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2">Exercise Description</label>
+								<div class="col-md-4">
+									<input type="text" ng-model="chapDescr" name="chapDescr" class="form-control ng-pristine ng-valid">
+								</div>
+							</div>
+							<div class="form-group">
+							<label class="col-md-2">Exercise Type</label>
+							<div class="col-md-4">
+						
+								<select  class="form-control">
+									<option id="Select" selected="selected"></option>
+									<option id="1">Multiple Choice</option>
+									<option id="2">Short Answer</option>
+									<option id="3">Upload File</option>
+								</select>
+							</div>
+							</div>
+						<div class="modal-footer">
+							<div class="row-fluid" style="margin-left: 40px;">
+								<div class="span12">
+									<input type="button" class="btn btn-sm btn-info" value="Preview"
+										ng-click="openDialog('partials/forms/previewExercise.html')"></input>
+									<button class="btn btn-primary btn-sm"
+										ng-click="submitSubchapter(chapSubTitle, chapIdS)">Save</button>
+									<input type="button" class="btn btn-sm btn-info" value="Publish"
+										ng-click="preview();"></input>
+								</div>
+							</div>
+						</div>
+						            <div class="modal-footer">
+						            </div>
+						            
+						<div class="modal-body">
+															<div class="form-group">
+							
+								<label>Questions</label>
+								</div>
+								<div class="form-group">
+										<div class="col-md-11">
+									<input type="text" ng-model="questionText" name="questionText" class="form-control ng-pristine ng-valid" required placeholder="Enter Question Here...">
+
+								</div>
+								<div class="col-md-1">
+										<input type="button" class="btn btn-sm btn-info" value="Add"
+										onclick="preview();"></input>
+								</div>
+								</div>
+							
+								</div>
+						</div>
+			
+					</form>
+						</div>
+		
+</body>
+</html>

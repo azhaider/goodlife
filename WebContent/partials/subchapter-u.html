@@ -1,0 +1,9 @@
+<h1>{{subchapter.subChapTitle}}</h1>
+<h2>{{subchapter.subChapDescr}}</h2>
+
+<div ng-repeat="form in subchapterForm">
+	<h3>{{form.description}}</h3>
+	<h4>{{form.helpText}}</h4>
+	<button type="btn btn-link" ng-file-select ng-model="form.files">Upload File</button>
+</div>
+<button type="button" class="btn btn-primary" ng-click="uploadQues()" >Submit </button>

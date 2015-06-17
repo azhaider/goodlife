@@ -1,0 +1,9 @@
+<h1>{{subchapter.subChapTitle}}</h1>
+<h2>{{subchapter.subChapDescr}}</h2>
+
+<div ng-repeat="form in subchapterForm">
+	<h3>{{form.question}}</h3>
+	<h4>{{form.helpText}}</h4>
+	<textarea ng-model="form.userAnswer"></textarea>
+</div>
+<button type="button" class="btn btn-primary" ng-click="submitPostShortAns()" >Submit </button>

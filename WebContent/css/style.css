@@ -1,0 +1,306 @@
+/*******************************************************
+ *
+ * Basic code style for The Good Life Organization
+ * Written by Sheldon Albertson
+ *
+ *******************************************************/
+
+/*
+* styles for curriculum/*.html
+*/
+		#deletebtn {
+            float: right;
+        }
+        .activeDroppable {
+			background-color: #eeffee;
+		}
+
+		.hoverDroppable {
+			background-color: lightgreen;
+		}
+
+		.draggableField {
+			/* float: left; */
+			padding-left:5px;
+		}
+		
+		.draggableField > input,select, button, .radiogroup {
+			margin-top: 5px;
+			/*margin-right: 5px;*/
+			margin-bottom: 10px;
+		}
+       
+       .draggableField:hover{
+			background-color: #ccffcc;
+		}
+       
+        legend {
+            margin-left: 20px;
+            float: left;
+        }
+
+    <style id="content-styles">
+		/* Styles that are also copied for Preview */
+		body {
+			margin: 20px 0 0 10px;
+		}
+
+        div.subchapter div.chapter{
+            margin:10px 50px;
+        }
+        .tabbable {
+            float: left;
+        }
+		.control-label {
+			display: inline-block !important;
+			padding-top: 0px;
+			text-align: center;
+			vertical-align: baseline;
+      font-weight: bold;
+		}
+	    
+        input.ctrl-textbox{
+            width: 90%;
+        }
+		.droppedField {
+			padding-left:5px;
+		}
+
+		.droppedField > input,select, button, .radiogroup {
+			margin-top: 10px;
+			
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+
+		.action-bar .droppedField {
+			float: left;
+			padding-left:5px;
+		}
+
+	</style>
+
+/* ====================================================
+   Login Page Style
+ ==================================================== */
+
+#login {
+}
+body {
+	background-color: #000000;
+	font-family: "Times New Roman";
+	color: #808080;
+}
+.logo img{
+	margin-bottom: 30px;
+	width: 100%;
+}
+.wrap {
+	width: 250px;
+	height: auto;
+	margin: auto;
+	margin-top: 10%;
+}
+.avatar {
+	width: 100%;
+	margin: auto;
+	width: 65px;
+	border-radius: 100px;
+	height: 65px;
+	background: #448ed3;
+	position: relative;
+	bottom: -15px;
+	background-color: #000000;
+}
+.avatar img {
+	width: 60px;
+	height: 60px;
+	border-radius: 100px;
+	margin: auto;
+	
+	display: block;
+}
+.wrap input {
+	border: none;
+	background: #fff;
+  font-family:"Times New Roman" ;
+  font-weight:700 ;
+	display: block;
+	height: 50px;
+	outline: none;
+	width: calc(100% - 24px);
+	margin: auto;
+	padding: 6px 12px 0px 12px;
+}
+.bar {
+	width: 100%;
+	height: 1px;
+	background: #ACACAC ;
+}
+.bar i {
+	width: 95%;
+	margin: auto;
+	height: 1px ;
+	display: block;
+	background: #ACACAC;
+}
+.wrap input[type="text"] {
+	border-radius: 7px 7px 0px 0px;
+	color: #515151;
+}
+.wrap input[type="password"] {
+	border-radius: 0px 0px 7px 7px;
+	color: #515151;
+}
+.forgot_link {
+	color: #83afdf ;
+	color: #83afdf;
+	text-decoration: none;
+	font-family: "Times New Roman";
+	font-size: 11px;
+	position: relative;
+	left: 193px;
+	top: -36px;
+}
+.wrap button {
+	width: 100%;
+	border-radius: 7px;
+	background-color: #ACACAC;
+	text-decoration: center;
+	border: 1px solid;
+	color: #000000;
+	margin-top: 0px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	outline: none;
+	font-family: "Lato";
+	font-size: 13px;
+	cursor: pointer;
+}
+ 
+  /* ====================================================
+   IMAGE STYLE
+   ==================================================== */
+ img {
+    max-width: 100%;
+    max-height: 100%;
+}
+ 
+ 
+ 
+ /* ====================================================
+   TOP BAR STYLE
+   ==================================================== */
+#topbar {
+	background: #000;
+	position: relative;
+	z-index: 1001;
+	width: 100%;
+	height: 2pc;
+}	
+ 
+ 
+ /* ====================================================
+   SIDEBAR AND WRAPPER STYLES
+   ==================================================== */
+   
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	margin-top: -2pc;
+	background: #000;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+	margin-top: -2pc;
+	padding-top: 0px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+	margin-top: 0pc;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+	position: fixed;
+	width; 250px
+}
+
+#page-content-wrapper {
+	z-index: 2;
+	margin-top: 2pc;
+	background: #000;
+    width: 100%;
+    padding: 0px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: fixed;
+    margin-right: 250px;
+	margin-top: 2pc;
+}
+
+/* Sidebar Styles - Animation and Mobile Screens */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+   
+   

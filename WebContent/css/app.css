@@ -1,0 +1,40 @@
+/* app css stylesheet */
+
+/*
+	Had to aligin everyhting
+	to the new serach bar
+*/
+input.adminSearchText {
+	float: left;
+}
+select.adminSearchText {
+	float: left;
+}
+div.adminSearchText {
+	float:left;
+}
+.submit-form input.ng-invalid.ng-touched {
+    background-color: #FA787E;
+}
+
+.test {
+	background-color: #FA787E;
+}
+
+/**
+Animation
+*/
+.my-show-hide-animation.ng-hide-add,
+.my-show-hide-animation.ng-hide-remove {
+  -webkit-transition: all linear all;
+  transition:all linear all;
+
+  /* remember to add this */
+  display:block!important;
+  opacity:1;
+  animation:0.5s lightSpeedOut ease;
+}
+.my-show-hide-animation.ng-hide {
+  opacity:0;
+  background-color: #FA787E;
+}

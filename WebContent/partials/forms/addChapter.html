@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+ <div class="modal-header">
+       <!--   <button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="$close()"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Add New Chapter</h4>-->
+      </div>
+            <div class="modal-body">
+      <form class="form-horizontal ng-pristine ng-valid" name="addChapterFm">
+							<div class="form-group">
+								<label class="col-md-2 ">Chapter Title</label>
+								<div class="col-md-4">
+									<input type="text" ng-model="chapTitle" name="chapTitle" class="form-control ng-pristine ng-valid" required placeholder={{chapName}}>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2">Chapter Description</label>
+								<div class="col-md-4">
+									<input type="text" ng-model="chapDescr" name="chapDescr" class="form-control ng-pristine ng-valid">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2">Chapter Order</label>
+								<div class="col-md-4">
+									<input type="text" ng-model="chapId" name="chapId" class="form-control ng-pristine ng-valid">
+								</div>
+							</div>
+							<div class="modal-footer">
+  							<div class="form-group">
+                  <label class="col-md-1 control-label">Pages</label><br />	
+                  					
+								  </div>
+								</div>
+							      <div class="modal-footer">
+							<div class="form-group">								
+								<div style="padding-left:110px">
+									<button class="btn btn-primary btn-sm" ng-click="addRow(chapTitle, chapDescr, chapId, addChapterFm)">Save</button>
+									<button class="btn btn-primary btn-sm" ng-click="showPane('subchapter')">Add Exercise</button>
+								</div>
+								</div>
+							</div>
+						</form>
+						</div>
+		
+</body>
+</html>
